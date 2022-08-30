@@ -236,7 +236,7 @@ function generateHTML(){
                           <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${EMPLOYEES[i].id}</li>
                             <li class="list-group-item">Email: <a href="mailto:${EMPLOYEES[i].email}">${EMPLOYEES[i].email}</a></li>
-                            <li class="list-group-item">GitHub:<a href="${EMPLOYEES[i].github}">${EMPLOYEES[i].github}</a></li>
+                            <li class="list-group-item">GitHub:<a href="https://github.com/${EMPLOYEES[i].github}" target="_blank">${EMPLOYEES[i].github}</a></li>
                           </ul>
                         </section>
                     </section>
@@ -267,7 +267,7 @@ function generateHTML(){
 
   //Write the HTML to a file  
   var dataToWrite=$.html();
-  fs.writeFileSync('index.html',dataToWrite);
+  fs.writeFileSync('./dist/index.html',dataToWrite);
 }
 
 //Main
