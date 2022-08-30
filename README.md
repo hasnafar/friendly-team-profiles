@@ -8,8 +8,8 @@ Once a user runs the "node index.js" command, the user must input the team manag
 Once the HTML file is generated, the user will see a team roster on the webpage. Upon clicking the email links, "mailto:" will open. Upon clicking the GitHub username, GitHub profiles open in a new tab.
 
 ## Screenshot
-![](assets/images/)
+![](assets/images/screenshot-team-profiles.png)
 
 ## Links
 Git Hub Repo Link: https://github.com/hasnafar/friendly-team-profiles
-Walkthrough Video: 
+Walkthrough Video: https://watch.screencastify.com/v/hWq8yl0w1Lny71BiTCpZ
