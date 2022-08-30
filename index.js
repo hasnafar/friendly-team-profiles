@@ -4,9 +4,9 @@ import cheerio from 'cheerio';
 
 
 import {Employee} from './lib/Employee.js';
-import {Manager} from '.lib/Manager.js';
-import {Engineer} from '.lib/Engineer.js';
-import {Intern} from '.lib/Intern.js';
+import {Manager} from './lib/Manager.js';
+import {Engineer} from './lib/Engineer.js';
+import {Intern} from './lib/Intern.js';
 
 var EMPLOYEES=[];
 
@@ -214,7 +214,7 @@ function generateHTML(){
                         <section class="card-body">
                           <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${EMPLOYEES[i].id} </li>
-                            <li class="list-group-item">Email: ${EMPLOYEES[i].email}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${EMPLOYEES[i].email}">${EMPLOYEES[i].email}</a></li>
                             <li class="list-group-item">Office Number: ${EMPLOYEES[i].officeNumber}</li>
                           </ul>
                         </section>
@@ -235,8 +235,8 @@ function generateHTML(){
                         <section class="card-body">
                           <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${EMPLOYEES[i].id}</li>
-                            <li class="list-group-item">Email: ${EMPLOYEES[i].email}</li>
-                            <li class="list-group-item">GitHub: ${EMPLOYEES[i].github}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${EMPLOYEES[i].email}">${EMPLOYEES[i].email}</a></li>
+                            <li class="list-group-item">GitHub:<a href="${EMPLOYEES[i].github}">${EMPLOYEES[i].github}</a></li>
                           </ul>
                         </section>
                     </section>
@@ -254,7 +254,7 @@ function generateHTML(){
                         <section class="card-body">
                           <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${EMPLOYEES[i].id}</li>
-                            <li class="list-group-item">Email: ${EMPLOYEES[i].email}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${EMPLOYEES[i].email}">${EMPLOYEES[i].email}</a></li>
                             <li class="list-group-item">School: ${EMPLOYEES[i].school}</li>
                           </ul>
                         </section>
