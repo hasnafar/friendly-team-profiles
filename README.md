@@ -12,4 +12,4 @@ Once the HTML file is generated, the user will see a team roster on the webpage.
 
 ## Links
 Git Hub Repo Link: https://github.com/hasnafar/friendly-team-profiles
-Walkthrough Video: https://watch.screencastify.com/v/hWq8yl0w1Lny71BiTCpZ
+Walkthrough Video: https://watch.screencastify.com/v/po16yb9QG7dPYxkgRKG6
